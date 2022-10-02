@@ -59,7 +59,7 @@ plt.show()
 ```
 
 ## Output:
-![simple linear regression model for predicting the marks scored](./images/ss.png)
+![simple linear regression model for predicting the marks scored](./images/ss.PNG)
 
 
 ## Result:

@@ -59,7 +59,11 @@ plt.show()
 ```
 
 ## Output:
+<<<<<<< HEAD
 ![simple linear regression model for predicting the marks scored](./images/ss.png)
+=======
+![simple linear regression model for predicting the marks scored](./ss.png)
+>>>>>>> 6ffe0b818cbf1861a4d175424f21e02f7b162943
 
 
 ## Result:

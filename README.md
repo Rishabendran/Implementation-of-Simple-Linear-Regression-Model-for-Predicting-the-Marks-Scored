@@ -26,6 +26,7 @@ RegisterNumber:  212219040121
 
 import numpy as np
 import pandas as pd
+from sklearn.metrics import mean_absolute_error,mean_squared_error
 import matplotlib.pyplot as plt
 dataset = pd.read_csv('/content/student_scores.csv')
 
@@ -35,6 +36,7 @@ dataset.tail()
 #assigning hours to X & scores to Y
 X = dataset.iloc[:,:-1].values
 X
+
 Y = dataset.iloc[:,1].values
 Y
 
@@ -63,15 +65,26 @@ plt.title('Test set(H vs S)')
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
+
+mse=mean_squared_error(Y_test,Y_pred)
+print('MSE = ',mse)
+
+mae=mean_absolute_error(Y_test,Y_pred)
+print('MAE = ',mae)
+
+rmse=np.sqrt(mse) 
+print('RMSE = ',rmse)
 ```
 
 ## Output:
 ![simple linear regression model for predicting the marks scored](./images/ss1.png)
 ![](./images/ss2.png)
+![](./images/ss7.png)
 ![](./images/ss3.png)
 ![](./images/ss4.png)
 ![](./images/ss5.png)
 ![](./images/ss6.png)
+![](./images/ss8.png)
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
